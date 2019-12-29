@@ -1,0 +1,29 @@
+@import "./_global.scss";
+
+main {
+
+	section {
+
+		padding: 40px;
+
+		iframe {
+			border: solid $primary 8px;
+			border-radius: 20px;
+			width: 100%;
+		}
+
+		.contact {
+
+			h3 {
+				margin: 40px 0 10px;
+			}
+
+			p {
+				margin-top: 4px;
+			}
+
+		}
+
+	}
+
+}
