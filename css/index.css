@@ -90,7 +90,7 @@ footer {
 }
 
 .background {
-  background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.75)), url("./img/background.jpg");
+  background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.75)), url("../img/background.jpg");
   background-position: center;
   background-size: cover;
   height: 300px;
