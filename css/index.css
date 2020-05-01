@@ -2,146 +2,127 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Roboto Slab", serif;
+.headerContainer {
+  width: 100vw;
 }
 
-.title {
-  margin: 20px;
-  font-weight: bold;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 20px;
-  font-size: 1.25em;
-}
-.menu li a {
-  display: block;
-  padding: 8px 12px;
-  margin: 10px;
-  transition: all 250ms ease-in-out;
-  text-transform: lowercase;
-  color: black;
-  font-weight: normal;
-  text-decoration: none;
-  border-bottom: solid white 4px;
-}
-.menu li .active {
-  border-bottom-color: black;
-}
-.menu li a:hover {
-  transform: scale(1.25);
-  border-bottom-color: black;
-}
-
-main {
+header {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 20px black;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  color: black;
+}
+header .titleContainer {
+  display: flex;
+}
+header .titleContainer img {
+  max-width: 80px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
-main section {
-  max-width: 800px;
+header a {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: inherit;
+  margin: 10px;
+  padding: 4px;
+  border-bottom: solid rgba(0, 0, 0, 0) 4px;
+}
+header .active {
+  border-bottom-color: #fdb44c;
+  color: #fdb44c;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 720px) {
   header {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    padding: 0;
-    box-shadow: 0 4px 10px black;
-    display: flex;
+    padding: 20px;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    z-index: 10;
-    height: 6vh;
+    height: 12vh;
   }
-  header .title {
-    margin-left: 100px;
-  }
-  header nav {
-    margin-right: 100px;
-  }
-
-  p {
+  header a {
+    padding: 10px;
     font-size: 1.25em;
+    transition: transform 250ms ease-in-out, border-bottom-color 250ms ease-in-out, color 250ms ease-in-out;
+  }
+  header a:hover {
+    transform: scale(1.25);
+    border-bottom-color: #fdb44c;
+    color: #fdb44c;
   }
 }
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+body {
+  font-family: "Roboto Slab", serif;
+  background: white;
 }
 
-.background {
-  background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.75)), url("../img/background.jpg");
-  background-position: center;
+.index .splash {
+  background-image: url("../img/background.jpg");
   background-size: cover;
-  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 88vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
 }
-.background .subtitle {
-  font-weight: bold;
-}
-.background span {
-  display: block;
+.index .splash p {
+  font-style: italic;
   font-size: 2em;
-  color: white;
-  margin: 6px 0;
+  max-width: 90vw;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px black;
+  margin-top: 20px;
+}
+.index .splash .action {
+  display: block;
+  background: #fdb44c;
+  padding: 14px 28px;
+  border-radius: 10px;
+  position: absolute;
+  top: 85vh;
+  font-weight: bold;
+  font-size: 1.25em;
+  box-shadow: 0 10px 20px black;
+  text-decoration: none;
+  color: black;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-section {
-  display: flex;
-  align-items: center;
-  margin: 60px 40px;
-  max-width: 600px;
-}
-section div {
-  width: 60%;
-  margin: 0 40px;
-}
-section div h2 {
-  margin: 10px 0;
-}
-section li {
-  margin-left: 20px;
-}
-section img {
-  width: 40%;
-}
-
-@media (min-width: 1080px) {
-  .background {
-    height: 70vh;
+@media (min-width: 720px) {
+  .index .splash {
+    justify-content: center;
   }
-  .background span {
-    font-size: 3em;
+  .index .splash p {
+    margin-top: unset;
+    max-width: 40vw;
   }
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  .index .splash .action {
+    top: 90vh;
+    transition: transform 250ms ease-in-out;
+  }
+  .index .splash .action:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

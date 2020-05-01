@@ -1,0 +1,79 @@
+@import "vars";
+
+.headerContainer {
+	width: 100vw;
+}
+
+$actionColor: $yellowOrange;
+
+header {
+
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	box-shadow: 0 0 20px black;
+	position: sticky;
+	z-index: 1000;
+	top: 0;
+	color: black;
+
+	.titleContainer {
+
+		display: flex;
+
+		img {
+			max-width: 80px;
+			margin-right: 10px;
+			object-fit: contain;
+		}
+
+	}
+
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	a {
+		text-decoration: none;
+		text-transform: lowercase;
+		color: inherit;
+		margin: 10px;
+		padding: 4px;
+		border-bottom: solid rgba(0,0,0,0) 4px;
+	}
+
+	.active {
+		border-bottom-color: $actionColor;
+		color: $actionColor
+	}
+
+}
+
+@media (min-width: 720px) {
+
+	header {
+		padding: 20px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		height: 12vh;
+
+		a {
+			padding: 10px;
+			font-size: 1.25em;
+			transition: transform $defaultTransition,
+			border-bottom-color $defaultTransition,
+			color $defaultTransition;
+		}
+
+		a:hover {
+			transform: scale(1.25);
+			border-bottom-color: $actionColor;
+			color: $actionColor;
+		}
+
+	}
+}

@@ -1,75 +1,74 @@
 @import "./global";
 
-.background {
-	background-image:
-			linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.75)),
-			url("../img/background.jpg");
-	background-position: center;
-	background-size: cover;
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.index {
 
-	.subtitle {
-		font-weight: bold;
-	}
+	.splash {
 
-	span {
-		display: block;
-		font-size: 2em;
-		color: white;
-		margin: 6px 0;
-	}
+		background-image: url("../img/background.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 88vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
 
-}
-
-main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-section {
-
-	display: flex;
-	align-items: center;
-	margin: 60px 40px;
-	max-width: 600px;
-
-	div {
-
-		h2 {
-			margin: 10px 0;
+		p {
+			font-style: italic;
+			font-size: 2em;
+			max-width: 90vw;
+			text-align: center;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 10px;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px black;
+			margin-top: 20px;
 		}
 
-		width: 60%;
-		margin: 0 40px;
-	}
-
-	li {
-		margin-left: 20px;
-	}
-
-	img {
-		width: 40%;
-	}
-}
-
-@media (min-width: 1080px) {
-	.background {
-		height: 70vh;
-		span {
-			font-size: 3em;
+		.action {
+			display: block;
+			background: $yellowOrange;
+			padding: 14px 28px;
+			border-radius: 10px;
+			position: absolute;
+			top: 85vh;
+			font-weight: bold;
+			font-size: 1.25em;
+			box-shadow: 0 10px 20px black;
+			text-decoration: none;
+			color: black;
 		}
+
 	}
+
 }
 
-footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
+@media(min-width: 720px) {
+
+	.index {
+
+		.splash {
+
+			justify-content: center;
+
+			p {
+				margin-top: unset;
+				max-width: 40vw;
+			}
+
+			.action {
+				top: 90vh;
+				transition: transform 250ms ease-in-out;
+			}
+
+			.action:hover {
+				transform: scale(1.25);
+				cursor: pointer;
+			}
+
+		}
+
+	}
+
 }
