@@ -4,18 +4,16 @@
 	//border: solid red 1px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 body {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto Slab', serif;
 }
 
 .title {
 	margin: 20px;
 	font-weight: bold;
 }
-
-$primary: #6ac6ed;
 
 .menu {
 
@@ -24,31 +22,32 @@ $primary: #6ac6ed;
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 20px;
+	font-size: 1.25em;
 
 	li {
+
 
 		a {
 
 			display: block;
 			padding: 8px 12px;
-			font-weight: bold;
 			margin: 10px;
-			background-color: $primary;
-			border-radius: 6px;
-			border: solid $primary 4px;
-			transition: transform 250ms ease-in-out;
-			box-shadow: 0 4px 4px lightgray;
+			transition: all 250ms ease-in-out;
+			text-transform: lowercase;
 			color: black;
+			font-weight: normal;
 			text-decoration: none;
+			border-bottom: solid white 4px;
 
 		}
 
 		.active {
-			background-color: white;
+			border-bottom-color: black;
 		}
 
 		a:hover {
-			transform:scale(1.125);
+			transform:scale(1.25);
+			border-bottom-color: black;
 		}
 
 	}
@@ -75,13 +74,13 @@ main {
 		position: sticky;
 		top: 0;
 		padding: 0;
-		box-shadow: 0 4px 4px lightgray;
+		box-shadow: 0 4px 10px black;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
 		z-index: 10;
-		height: 15vh;
+		height: 6vh;
 
 		.title {
 			margin-left: 100px;
@@ -92,12 +91,6 @@ main {
 		}
 	}
 
-	footer {
-		position: sticky;
-		bottom: 0;
-		z-index: 10;
-	}
-
 	p {
 		font-size: 1.25em;
 	}
@@ -105,7 +98,6 @@ main {
 }
 
 footer {
-	background-color: $primary;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
