@@ -61,50 +61,114 @@ header .active {
     transition: transform 250ms ease-in-out, border-bottom-color 250ms ease-in-out, color 250ms ease-in-out;
   }
   header a:hover {
-    transform: scale(1.25);
+    transform: scale(1.125);
     border-bottom-color: #fdb44c;
     color: #fdb44c;
   }
 }
+footer {
+  width: 100%;
+  height: 10vh;
+  margin-top: 40px;
+  background: #fdb44c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto Slab", serif;
   background: white;
 }
 
 .index .splash {
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
+.index .splash .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.index .splash .filter {
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 .index .splash p {
   font-style: italic;
-  font-size: 2em;
+  font-size: 1.5em;
   max-width: 90vw;
   text-align: center;
-  background: rgba(255, 255, 255, 0.8);
   padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px black;
-  margin-top: 20px;
+  margin-top: 80px;
+  z-index: 2;
+  color: white;
 }
 .index .splash .action {
   display: block;
   background: #fdb44c;
   padding: 14px 28px;
   border-radius: 10px;
-  position: absolute;
-  top: 85vh;
+  position: sticky;
   font-weight: bold;
   font-size: 1.25em;
   box-shadow: 0 10px 20px black;
   text-decoration: none;
   color: black;
+  margin-top: 60px;
+}
+.index #next {
+  background: white;
+  width: 100vw;
+  padding-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 40px;
+}
+.index section img {
+  object-fit: cover;
+  max-height: 200px;
+  width: 100%;
+}
+.index section .text {
+  display: flex;
+  flex-direction: column;
+}
+.index section .text h2 {
+  margin: 10px 0;
+}
+.index section .text .action {
+  background: #fdb44c;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  width: 200px;
+  margin-top: 20px;
 }
 
 @media (min-width: 720px) {
@@ -112,16 +176,45 @@ body {
     justify-content: center;
   }
   .index .splash p {
-    margin-top: unset;
+    margin-top: -40px;
     max-width: 40vw;
+    font-size: 2.5em;
   }
   .index .splash .action {
-    top: 90vh;
+    margin-top: 60px;
+    top: 50vh;
     transition: transform 250ms ease-in-out;
   }
   .index .splash .action:hover {
     transform: scale(1.25);
-    cursor: pointer;
+  }
+  .index .action {
+    transition: transform 250ms ease-in-out;
+  }
+  .index .action:hover {
+    transform: scale(1.125);
+  }
+  .index .flip {
+    flex-direction: row-reverse;
+    background: #EEE;
+    text-align: right;
+  }
+  .index .flip .text {
+    align-items: flex-end;
+  }
+  .index section {
+    flex-direction: row;
+    width: 60%;
+    margin-top: 60px;
+    padding: 20px;
+  }
+  .index section img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .index section .text {
+    width: 50%;
   }
 }
 
