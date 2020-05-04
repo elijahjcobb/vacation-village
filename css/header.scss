@@ -21,6 +21,8 @@ header {
 	.titleContainer {
 
 		display: flex;
+		color: black;
+		text-decoration: none;
 
 		img {
 			max-width: 80px;
@@ -34,20 +36,16 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-	}
 
-	a {
-		text-decoration: none;
-		text-transform: lowercase;
-		color: inherit;
-		margin: 10px;
-		padding: 4px;
-		border-bottom: solid rgba(0,0,0,0) 4px;
-	}
+		a {
+			text-decoration: none;
+			text-transform: lowercase;
+			color: inherit;
+			margin: 10px;
+			padding: 4px;
+			border-bottom: solid rgba(0,0,0,0) 4px;
+		}
 
-	.active {
-		border-bottom-color: $actionColor;
-		color: $actionColor
 	}
 
 }
@@ -61,18 +59,27 @@ header {
 		justify-content: space-between;
 		height: 12vh;
 
-		a {
-			padding: 10px;
-			font-size: 1.25em;
-			transition: transform $defaultTransition,
-			border-bottom-color $defaultTransition,
-			color $defaultTransition;
+		nav {
+
+			a {
+				padding: 10px;
+				font-size: 1.25em;
+				transition: transform $defaultTransition,
+				border-bottom-color $defaultTransition,
+				color $defaultTransition;
+			}
+
+			a:hover {
+				transform: scale(1.125);
+				border-bottom-color: $actionColor;
+				color: $actionColor;
+				cursor: pointer;
+			}
+
 		}
 
-		a:hover {
-			transform: scale(1.125);
-			border-bottom-color: $actionColor;
-			color: $actionColor;
+		.titleContainer:hover {
+			cursor: pointer;
 		}
 
 	}

@@ -55,9 +55,9 @@
 
 	}
 
-	#next {
+	.sections {
 		background: white;
-		width: 100vw;
+		width: 100%;
 		padding-top: 12vh;
 		display: flex;
 		flex-direction: column;
@@ -66,42 +66,46 @@
 
 	section {
 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		width: 80%;
 		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 20px 0;
 
-		img {
-			object-fit: cover;
-			max-height: 200px;
-			width: 100%;
+		h2 {
+			background: $actionColor;
+			padding: 4px;
+			color: white;
+			font-size: 2em;
+			text-transform: uppercase;
+			width: unset;
+			margin-bottom: 10px;
 		}
 
-		.text {
-
-			display: flex;
-			flex-direction: column;
-
-			h2 {
-				margin: 10px 0;
-			}
-
-			.action {
-				background: $actionColor;
-				color: black;
-				font-weight: bold;
-				text-decoration: none;
-				display: block;
-				padding: 5px 10px;
-				text-align: center;
-				border-radius: 5px;
-				width: 200px;
-				margin-top: 20px;
-			}
-
+		p {
+			margin: 8px 0;
 		}
 
+	}
+
+	.contactItem {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		color: black;
+		text-decoration: none;
+		margin-bottom: 8px;
+
+		p {
+			margin-left: 8px;
+		}
+
+		.icon {
+			color: $actionColor;
+			width: 24px;
+			height: 24px;
+		}
 	}
 
 }
@@ -138,6 +142,7 @@
 
 		.action:hover {
 			transform: scale(1.125);
+			cursor: pointer;
 		}
 
 		.flip {
@@ -149,26 +154,6 @@
 				align-items: flex-end;
 			}
 		}
-
-		section {
-
-			flex-direction: row;
-			width: 60%;
-			margin-top: 60px;
-			padding: 20px;
-
-			img {
-				width: 50%;
-				height: 100%;
-				object-fit: contain;
-			}
-
-			.text {
-				width: 50%;
-			}
-
-		}
-
 	}
-
 }
+

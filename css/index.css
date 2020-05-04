@@ -23,6 +23,8 @@ header {
 }
 header .titleContainer {
   display: flex;
+  color: black;
+  text-decoration: none;
 }
 header .titleContainer img {
   max-width: 80px;
@@ -34,17 +36,13 @@ header nav {
   flex-wrap: wrap;
   align-items: center;
 }
-header a {
+header nav a {
   text-decoration: none;
   text-transform: lowercase;
   color: inherit;
   margin: 10px;
   padding: 4px;
   border-bottom: solid rgba(0, 0, 0, 0) 4px;
-}
-header .active {
-  border-bottom-color: #fdb44c;
-  color: #fdb44c;
 }
 
 @media (min-width: 720px) {
@@ -55,15 +53,19 @@ header .active {
     justify-content: space-between;
     height: 12vh;
   }
-  header a {
+  header nav a {
     padding: 10px;
     font-size: 1.25em;
     transition: transform 250ms ease-in-out, border-bottom-color 250ms ease-in-out, color 250ms ease-in-out;
   }
-  header a:hover {
+  header nav a:hover {
     transform: scale(1.125);
     border-bottom-color: #fdb44c;
     color: #fdb44c;
+    cursor: pointer;
+  }
+  header .titleContainer:hover {
+    cursor: pointer;
   }
 }
 footer {
@@ -131,44 +133,49 @@ body {
   color: black;
   margin-top: 60px;
 }
-.index #next {
+.index .sections {
   background: white;
-  width: 100vw;
+  width: 100%;
   padding-top: 12vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .index section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 80%;
   margin-top: 40px;
-}
-.index section img {
-  object-fit: cover;
-  max-height: 200px;
-  width: 100%;
-}
-.index section .text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
 }
-.index section .text h2 {
-  margin: 10px 0;
-}
-.index section .text .action {
+.index section h2 {
   background: #fdb44c;
+  padding: 4px;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  width: unset;
+  margin-bottom: 10px;
+}
+.index section p {
+  margin: 8px 0;
+}
+.index .contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   color: black;
-  font-weight: bold;
   text-decoration: none;
-  display: block;
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 5px;
-  width: 200px;
-  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.index .contactItem p {
+  margin-left: 8px;
+}
+.index .contactItem .icon {
+  color: #fdb44c;
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width: 720px) {
@@ -193,6 +200,7 @@ body {
   }
   .index .action:hover {
     transform: scale(1.125);
+    cursor: pointer;
   }
   .index .flip {
     flex-direction: row-reverse;
@@ -201,20 +209,6 @@ body {
   }
   .index .flip .text {
     align-items: flex-end;
-  }
-  .index section {
-    flex-direction: row;
-    width: 60%;
-    margin-top: 60px;
-    padding: 20px;
-  }
-  .index section img {
-    width: 50%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .index section .text {
-    width: 50%;
   }
 }
 
