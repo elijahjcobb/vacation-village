@@ -3,7 +3,7 @@ var _loop_1 = function (link) {
     link.onclick = function () {
         var id = link.innerHTML.toLowerCase();
         var elementToLink = document.getElementById(id);
-        var pos = elementToLink.offsetTop - 160;
+        var pos = elementToLink.offsetTop - 2000;
         if (id === "home")
             pos = 0;
         window.scrollTo({ top: pos });
@@ -15,6 +15,6 @@ for (var _i = 0, linksInNav_1 = linksInNav; _i < linksInNav_1.length; _i++) {
 }
 document.getElementById("learnMoreButton").onclick = function () {
     var elementToLink = document.getElementById("about");
-    var pos = elementToLink.offsetTop - 160;
+    var pos = elementToLink.offsetTop - 200;
     window.scrollTo({ top: pos });
 };
