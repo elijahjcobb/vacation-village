@@ -5,7 +5,7 @@ for (const link of linksInNav)  {
 
 		const id: string = link.innerHTML.toLowerCase();
 		const elementToLink = document.getElementById(id) as HTMLDivElement;
-		let pos = elementToLink.offsetTop - 2000;
+		let pos = elementToLink.offsetTop - 200;
 		if (id === "home") pos = 0;
 		window.scrollTo({top: pos});
 
