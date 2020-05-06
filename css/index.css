@@ -158,6 +158,10 @@ body {
   width: unset;
   margin-bottom: 10px;
 }
+.index section h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
 .index section p {
   margin: 8px 0;
 }
@@ -179,6 +183,9 @@ body {
 }
 
 @media (min-width: 720px) {
+  .index section {
+    max-width: 60vw;
+  }
   .index .splash {
     justify-content: center;
   }
