@@ -182,6 +182,15 @@ body {
   width: 24px;
   height: 24px;
 }
+.index #media .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index #media .images img {
+  width: 100%;
+  margin: 10px 0;
+}
 
 @media (min-width: 720px) {
   .index section {
@@ -217,6 +226,15 @@ body {
   }
   .index .flip .text {
     align-items: flex-end;
+  }
+  .index #media .images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .index #media .images img {
+    width: 40%;
+    margin: 10px;
   }
 }
 

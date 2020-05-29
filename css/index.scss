@@ -113,6 +113,18 @@
 		}
 	}
 
+	#media .images {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			width: 100%;
+			margin: 10px 0;
+		}
+	}
+
 }
 
 @media(min-width: 720px) {
@@ -163,6 +175,19 @@
 				align-items: flex-end;
 			}
 		}
+
+		#media .images {
+
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 -10px;
+
+			img {
+				width: 40%;
+				margin: 10px;
+			}
+		}
+
 	}
 }
 
