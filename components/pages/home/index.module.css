@@ -1,0 +1,11 @@
+.background {
+	background-image: url("/background-small.jpg");
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	background-position: center;
+	background-size: cover;
+	filter: blur(4px) brightness(var(--opacity));
+	z-index: -1;
+}
