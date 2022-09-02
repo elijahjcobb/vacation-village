@@ -35,6 +35,8 @@
 .link {
   display: block;
   transform-origin: center;
+  color: var(--foreground);
+  border: none;
   padding: var(--padding-s);
 }
 
