@@ -3,8 +3,8 @@ import { NavBar } from "../nav";
 import { PropsWithChildren } from "react";
 
 export function Shell({ children }: PropsWithChildren) {
-	return <>
+	return <div className={styles.shell}>
 		<NavBar />
 		{children}
-	</>
+	</div>
 }

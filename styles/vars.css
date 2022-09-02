@@ -10,9 +10,10 @@
   --white-off: #fff5f5;
   --background: var(--white);
   --background-rgb: 255, 255, 255;
-  --opacity: 0.95;
+  --opacity: 1;
   --foreground: var(--black);
   --primary: var(--orange);
+  --primary-off: rgba(99, 71, 30, 0.25);
   --secondary: var(--blue);
   --padding: 16px;
   --padding-s: calc(var(--padding) / 2);
@@ -25,10 +26,20 @@
   --accents-4: #888;
   --accents-5: #aaa;
   --accents-6: #ccc;
-  --bp: 1024px;
+  --bp: 768px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --white: #151515;
+    --black: #eee;
+    --white-off: #000005;
+    --background-rgb: 20, 20, 20;
+    --accents-1: #ccc;
+    --accents-2: #aaa;
+    --accents-3: #888;
+    --accents-4: #666;
+    --accents-5: #444;
+    --accents-6: #222;
   }
 }

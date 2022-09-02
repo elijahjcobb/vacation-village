@@ -2,7 +2,7 @@ import { Container } from "../../shell/max-width-container";
 import styles from "./index.module.css";
 
 export function AboutPage() {
-	return <Container className={styles.container}>
+	return <Container className={styles.container} background="/img2.jpg">
 		<h1>about</h1>
 		<section>
 			<h2>our Park</h2>

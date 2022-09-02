@@ -12,7 +12,7 @@ function ContactItem(props: { icon: IconType, value: string }) {
 }
 
 export function ContactPage() {
-	return <Container>
+	return <Container background="/img5.jpg">
 		<h1>Contact</h1>
 		<p>Feel free to reach out to us for any issues or inquiries by any of the methods below:</p>
 		<ContactItem icon={FaPhoneAlt} value="(231) 409-2088" />

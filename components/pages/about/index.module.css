@@ -8,8 +8,3 @@
   align-items: flex-start;
   gap: var(--padding-s);
 }
-
-.container p {
-  line-height: 1.25;
-  text-align: justify;
-}
