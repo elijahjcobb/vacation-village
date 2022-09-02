@@ -1,0 +1,15 @@
+.container {
+  gap: var(--padding);
+}
+
+.container section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--padding-s);
+}
+
+.container p {
+  line-height: 1.25;
+  text-align: justify;
+}

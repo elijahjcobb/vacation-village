@@ -14,7 +14,7 @@ export function NavBar() {
 		<Link href='/'>
 			<div className={styles.header}>
 				<Icon size={18} />
-				<h1>Vacation Village</h1>
+				<span className={styles.title}>Vacation Village</span>
 			</div>
 		</Link>
 		<ol className={styles.links}>

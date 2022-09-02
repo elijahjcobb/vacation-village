@@ -1,34 +1,34 @@
 :root {
-	--cyan: #62dafa;
-	--blue: #01cffb;
-	--green: #058b1d;
-	--green-dark: #31662b;
-	--orange: #fdb44c;
-	--yellow: #ffdf8e;
-	--white: #fff;
-	--black: #04151F;
-	--white-off: #fff5f5;
-	--background: var(--white);
-	--background-rgb: 255, 255, 255;
-	--opacity: 0.95;
-	--foreground: var(--black);
-	--primary: var(--orange);
-	--secondary: var(--blue);
-	--padding: 16px;
-	--padding-s: calc(var(--padding) / 2);
-	--padding-xs: calc(var(--padding) / 4);
-	--padding-l: calc(var(--padding) * 2);
-	--padding-xl: calc(var(--padding) * 4);
-	--accents-1: #222;
-	--accents-2: #444;
-	--accents-3: #666;
-	--accents-4: #888;
-	--accents-5: #aaa;
-	--accents-6: #ccc;
+  --cyan: #62dafa;
+  --blue: #01cffb;
+  --green: #058b1d;
+  --green-dark: #31662b;
+  --orange: #fdb44c;
+  --yellow: #ffdf8e;
+  --white: #fff;
+  --black: #04151f;
+  --white-off: #fff5f5;
+  --background: var(--white);
+  --background-rgb: 255, 255, 255;
+  --opacity: 0.95;
+  --foreground: var(--black);
+  --primary: var(--orange);
+  --secondary: var(--blue);
+  --padding: 16px;
+  --padding-s: calc(var(--padding) / 2);
+  --padding-xs: calc(var(--padding) / 4);
+  --padding-l: calc(var(--padding) * 2);
+  --padding-xl: calc(var(--padding) * 4);
+  --accents-1: #222;
+  --accents-2: #444;
+  --accents-3: #666;
+  --accents-4: #888;
+  --accents-5: #aaa;
+  --accents-6: #ccc;
+  --bp: 1024px;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		
-	}
+  :root {
+  }
 }

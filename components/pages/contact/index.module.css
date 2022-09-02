@@ -1,0 +1,12 @@
+.item {
+  display: flex;
+  margin: var(--padding) 0;
+  gap: var(--padding-s);
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}

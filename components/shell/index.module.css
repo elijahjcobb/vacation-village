@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  max-width: var(--bp);
+  margin: auto;
+  padding: var(--padding-xl) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--padding-s);
+}
