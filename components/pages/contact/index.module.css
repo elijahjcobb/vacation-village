@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+.item a {
+  border: none;
+  color: var(--foreground);
+}
+
+.item a:hover {
+  border: none;
+  transform: none;
+}
+
 .icon {
   width: 24px;
   height: 24px;

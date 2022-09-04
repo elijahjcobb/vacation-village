@@ -1,4 +1,4 @@
-import Map, { Marker } from 'react-map-gl';
+import Map, { Marker, NavigationControl, ScaleControl } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const LOCATION = { lat: 44.900915, lng: -85.394782 }
@@ -15,7 +15,10 @@ export function VacationVillageMap() {
 		style={{ width: "100%", height: "40vh" }}
 		mapStyle="mapbox://styles/mapbox/streets-v9"
 		mapboxAccessToken={MAPBOX_TOKEN}
+		scrollZoom={false}
 	>
+		<NavigationControl />
+		<ScaleControl />
 		<Marker longitude={LOCATION.lng} latitude={LOCATION.lat} color="red" />
 	</Map>
 }
