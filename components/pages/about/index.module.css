@@ -8,3 +8,14 @@
   align-items: flex-start;
   gap: var(--padding-s);
 }
+
+.container h2 {
+  margin-top: -36px;
+  margin-left: -8px;
+  margin-bottom: 24px;
+  z-index: 1;
+}
+
+.container img {
+  border-radius: 4px;
+}
