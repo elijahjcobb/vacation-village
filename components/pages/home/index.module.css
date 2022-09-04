@@ -1,11 +1,41 @@
-.background {
-  background-image: url("/background-small.jpg");
+.hero {
+  display: flex;
   width: 100vw;
-  height: 100vh;
-  position: fixed;
+  height: 60vh;
+  left: 0;
+  top: 69px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.hero img,
+.dark {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  left: 0;
   top: 0;
-  background-position: center;
-  background-size: cover;
-  filter: blur(8px) brightness(var(--opacity));
+  z-index: -2;
+}
+
+.hero span {
+  font-weight: bold;
+  font-size: 3em;
+  max-width: 720px;
+  font-style: italic;
+  padding: var(--padding);
+  text-align: center;
+}
+
+.dark {
   z-index: -1;
+  background: rgba(var(--background-rgb), 0.5);
+}
+
+.padding {
+  display: block;
+  height: calc(60vh + -40px);
+  width: 100vw;
 }
