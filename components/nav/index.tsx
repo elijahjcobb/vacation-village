@@ -4,7 +4,6 @@ import styles from './index.module.css';
 
 const LINKS = [
 	{ path: "/", name: "home" },
-	{ path: "/about", name: "about" },
 	{ path: "/rates", name: "rates" },
 	{ path: "/contact", name: "contact" },
 ]

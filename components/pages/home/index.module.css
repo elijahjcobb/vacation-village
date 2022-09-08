@@ -36,6 +36,6 @@
 
 .padding {
   display: block;
-  height: calc(60vh + -40px);
+  height: calc(60vh + -60px);
   width: 100vw;
 }

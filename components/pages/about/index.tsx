@@ -7,8 +7,7 @@ import img3 from "../../../public/img3.jpg"
 import img4 from "../../../public/img4.jpg"
 
 export function AboutPage() {
-	return <Container className={styles.container} background="/img2.jpg">
-		<h1>about</h1>
+	return <Container className={styles.container}>
 		<section>
 			<Image src={img1} alt="park aerial" />
 			<h2>our Park</h2>

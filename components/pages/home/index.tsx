@@ -1,4 +1,5 @@
 import { Container } from "../../shell/max-width-container";
+import { AboutPage } from "../about";
 import styles from "./index.module.css";
 
 export function HomePage() {
@@ -10,5 +11,6 @@ export function HomePage() {
 			<span>{`Beneath the towering maples on the water's edge, you will love calling Vacation Village your home.`}</span>
 		</div>
 		<div className={styles.padding} />
+		<AboutPage />
 	</Container >
 }
