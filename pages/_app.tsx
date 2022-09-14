@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <Head>
       <title>Vacation Village</title>
       <link href="/favicon.svg" rel="icon" />
+      <script async src="https://cdn.splitbee.io/sb.js" />
     </Head>
     <Shell>
       <Component {...pageProps} />
