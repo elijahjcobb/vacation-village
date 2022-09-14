@@ -3,6 +3,8 @@ import type { AppProps } from "next/app"
 import Head from "next/head"
 import { Shell } from "../components/shell"
 
+// Added splitbee.
+
 export default function App({ Component, pageProps }: AppProps) {
   return <>
     <Head>
