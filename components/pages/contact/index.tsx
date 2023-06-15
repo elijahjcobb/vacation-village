@@ -19,7 +19,7 @@ export function ContactPage() {
 		<h1>Contact</h1>
 		<VacationVillageMap />
 		<p>Feel free to reach out to us for any issues or inquiries by any of the methods below:</p>
-		<ContactItem icon={FaPhoneAlt} value="(231) 409-2088" url="tel:2314092088" />
+		<ContactItem icon={FaPhoneAlt} value="(231) 409-1986" url="tel:2314091986" />
 		<ContactItem icon={FaPhoneAlt} value="(231) 409-3316" url="tel:2314093316" />
 		<ContactItem icon={FaPhoneAlt} value="(231) 264-6256" url="tel:2312646256" />
 		<ContactItem icon={FaMapPin} value="Golfview Cir, Elk Rapids, MI 49629" url="https://goo.gl/maps/uR21svuAvmDzcreM9" />
