@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+  padding: var(--sp2);
+  border-radius: var(--sp-2);
+  border: solid 2px var(--pri);
+  transition: var(--trans);
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 var(--sp2) var(--pri-faded);
+}
+
+.primary {
+  background: var(--pri);
+  color: var(--white);
+}
+
+.secondary {
+  color: var(--pri);
+  background: var(--white);
+}
