@@ -1,0 +1,65 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp2);
+  width: 100%;
+  max-width: var(--bp);
+  margin: auto;
+  padding: var(--sp-l) 0;
+}
+
+.title {
+  font-size: var(--sp4);
+}
+
+.subtitle {
+  font-size: var(--sp2);
+  color: var(--acc-3);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp3);
+  width: 100%;
+  padding: var(--sp-l) 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 var(--sp) var(--acc2);
+  padding: var(--sp3);
+  gap: var(--sp2);
+  border-radius: var(--sp);
+}
+
+.iconContainer {
+  width: var(--sp-l);
+  height: var(--sp-l);
+  background: var(--pri-faded);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--sp);
+}
+
+.icon {
+  width: var(--sp4);
+  height: var(--sp4);
+  color: var(--pri);
+}
+
+.cardTitle {
+  font-weight: bold;
+}
+
+.cardContent {
+  color: var(--acc-3);
+}
+
+.divider {
+  background: var(--pri-faded);
+  width: 40%;
+  height: 2px;
+}

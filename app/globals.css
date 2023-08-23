@@ -26,10 +26,15 @@
   --green-light: #b9eaa8;
   --pri: var(--green);
   --pri-faded: var(--green-light);
-  --sec: var(--green);
-  --sec-faded: var(--green-light);
+  --sec: var(--blue);
+  --sec-faded: var(--blue-light);
   --trans: 125ms ease-in-out;
   --trans-slow: 250ms ease-in-out;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 * {
@@ -39,4 +44,11 @@
   list-style: none;
   scroll-behavior: smooth;
   /* outline: solid 1px red; */
+}
+
+h2 {
+  font-size: var(--sp2);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--pri);
 }

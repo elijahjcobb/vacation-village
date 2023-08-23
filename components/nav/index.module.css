@@ -1,14 +1,26 @@
-.nav {
-  display: flex;
-  position: absolute;
+.container {
+  position: fixed;
   top: 0;
   z-index: 999999;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px rgba(0, 0, 0, 0);
+  transition: 500ms ease-in-out;
+}
+
+.nav {
+  display: flex;
   align-items: center;
   padding: var(--sp2);
-  width: 100vw;
-  max-width: var(--bp);
+  width: var(--bp);
   gap: var(--sp4);
-  left: calc((100vw - var(--bp)) / 2);
+}
+
+.scrolled {
+  background: var(--white);
+  border-bottom-color: var(--acc2);
 }
 
 .list {

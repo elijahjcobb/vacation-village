@@ -24,6 +24,7 @@
 .subtitle {
   font-weight: normal;
   color: var(--gray);
+  font-size: var(--sp3);
 }
 
 .buttons {

@@ -14,7 +14,7 @@ export function Hero() {
 			<span className={styles.subtitle}>{COPY.hero.subtitle}</span>
 			<div className={styles.buttons}>
 				<Button>Apply</Button>
-				<Button secondary>Rates from $371/m</Button>
+				<Button secondary>Rates from ${COPY.price.low}/m</Button>
 			</div>
 		</div>
 		<div className={styles.images}>
