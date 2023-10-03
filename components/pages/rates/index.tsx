@@ -15,7 +15,7 @@ export function RatesPage() {
 		<section>
 			<h2>RENTAL APPLICATION</h2>
 			<p>To download our rental application, click the link below. Please make sure that you read our rules and regulations.</p>
-			<a target='_blank' href="https://docs.google.com/document/d/1QNXNghUU1YgKmWsnXtMlvFB3w8lWMaWcvluE1lv2jfc/edit?usp=sharing">View Rental Application</a>
+			<a target='_blank' rel="noreferrer" href="https://docs.google.com/document/d/1QNXNghUU1YgKmWsnXtMlvFB3w8lWMaWcvluE1lv2jfc/edit?usp=sharing">View Rental Application</a>
 		</section>
 	</Container>
 }
