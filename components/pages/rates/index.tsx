@@ -10,7 +10,7 @@ export function RatesPage() {
 		<section>
 			<h2>Our rules</h2>
 			<p>If you would like to view our rules and regulations please click the link below to view an updated rulebook.</p>
-			<a target='_blank' href="https://docs.google.com/document/d/18u_k-eS-a9QPYJJi0_csuJM_-XEcIUQFm4rcVmt7Wsk/edit?usp=sharing" rel="noreferrer">View Rules and Regulations</a>
+			<a target='_blank' href="/Rules_and_Regulations.pdf" rel="noreferrer">View Rules and Regulations</a>
 		</section>
 		<section>
 			<h2>RENTAL APPLICATION</h2>
