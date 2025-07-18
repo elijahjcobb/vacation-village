@@ -4,7 +4,7 @@ export function RatesPage() {
 	return <Container background="/img1.jpg">
 		<h1>Rates</h1>
 		<section>
-			<p>Vacation Village lots range in price from $371 to $417* per month, depending on the location of the lot.</p>
+			<p>Vacation Village lots are $550* per month.</p>
 			<p>*These prices do not include the Michigan Mobile Home Tax of $3.00 per month when occupied.</p>
 		</section>
 		<section>
